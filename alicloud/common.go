@@ -627,7 +627,7 @@ func ConvertIntegerToInt(value requests.Integer) (v int, err error) {
 	}
 	v, err = strconv.Atoi(string(value))
 	if err != nil {
-		return v, fmt.Errorf("Converting integer %s to int got an error: %#v.", value, err)
+		return v, fmt.Errorf("1Converting integer %s to int got an error: %#v.", value, err)
 	}
 	return
 }
