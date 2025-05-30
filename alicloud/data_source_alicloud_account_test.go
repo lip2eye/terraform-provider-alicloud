@@ -25,6 +25,6 @@ func TestAccAlicloudAccountDataSource_basic(t *testing.T) {
 }
 
 const testAccCheckAlicloudAccountDataSourceBasic = `
-data "alicloud_account" "current" {
+data "alicloud_account" "current1" {
 }
 `
