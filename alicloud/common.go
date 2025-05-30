@@ -713,7 +713,7 @@ func (a *Invoker) Run(f func() error) error {
 			catcher.RetryCount--
 
 			if catcher.RetryCount <= 0 {
-				return fmt.Errorf("Retry timeout and got an error: %#v.", err)
+				return fmt.Errorf("1Retry timeout and got an error: %#v.", err)
 			} else {
 				time.Sleep(time.Duration(catcher.RetryWaitSeconds) * time.Second)
 				return a.Run(f)
